@@ -1,14 +1,26 @@
 import React from "react"
-
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+import styled from "styled-components"
+import {Link} from "gatsby"
 
 const NotFoundPage = () => (
   <Layout>
-    <SEO title="404: Not found" />
+    <ErrorWrapper>
     <h1>404: Not Found</h1>
-    <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
+    <p>Ta strona nie istnieje</p>
+    <Link to="/">Strona główna</Link>
+    </ErrorWrapper>
   </Layout>
 )
-
+const ErrorWrapper = styled.section`
+position: relative;
+max-width:var(--max-width);
+margin:0 auto;
+height:80vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+line-height:3;
+`
 export default NotFoundPage
