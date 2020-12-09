@@ -6,7 +6,7 @@ import {Link} from "gatsby"
 const NotFoundPage = () => (
   <Layout>
     <ErrorWrapper>
-    <h1>404: Not Found</h1>
+    <h1>404 Not Found</h1>
     <p>Ta strona nie istnieje</p>
     <Link to="/">Strona główna</Link>
     </ErrorWrapper>
