@@ -183,7 +183,7 @@ const ConsultationsForm = () => {
               <input
                 type="radio"
                 id="raczynska"
-                defaultValue="Psyholożka Wiktoria Raczyńska"
+                defaultValue="Psycholożka Wiktoria Raczyńska"
                 onClick={handleSelectChange}
               />
               <label htmlFor="raczynska">Psyholożka Wiktoria Raczyńska</label>
