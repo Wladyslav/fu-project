@@ -46,8 +46,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `Instytut Praw Migrantów`,
+        name: `Instytut Praw Migrantów`,
+        short_name: `IPM`,
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,
