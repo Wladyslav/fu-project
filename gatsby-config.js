@@ -9,7 +9,8 @@ module.exports = {
     titleTemplate: `%s | IPM`,
     url:`instytutpm.eu`,
     image:`/static/Screenshot.png`,
-    twitterUsername:`@Instytutipm`
+    twitterUsername:`@Instytutipm`,
+    siteUrl:`https://www.instytutpm.eu`
   },
 
   plugins: [
@@ -22,6 +23,7 @@ module.exports = {
                
       },
     },
+    `gatsby-plugin-sitemap`,
     `gatsby-plugin-styled-components`,
     {
       resolve: `gatsby-plugin-google-fonts`,
