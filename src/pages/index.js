@@ -3,7 +3,7 @@ import Layout from "../components/layout"
 import MainTitle from "../components/MainTitle"
 import Hero from "../components/Hero"
 import TeamSection from "../components/TeamSection"
-import SEO from "../components/SEO"
+import SEO from "../components/seo"
 
 const IndexPage = () => (
   <Layout>
