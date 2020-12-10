@@ -33,7 +33,7 @@ const Hero = () => {
             </li>
             <li>
               WT
-              <span /> 14:00 - 20:00
+              <span /> 10:00 - 14:00
             </li>
             <li>
               ŚR
@@ -41,7 +41,7 @@ const Hero = () => {
             </li>
             <li>
               CZW <span />
-              14:00 - 20:00
+              10:00 - 14:00
             </li>
             <li>
               PT <span />

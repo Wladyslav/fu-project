@@ -7,7 +7,7 @@ import SEO from "../components/seo"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Strona główna"/>
+    <SEO title="Instytut Praw Migrantów - Home"/>
     <MainTitle title="instytut praw migrantów" mainPage />
     <Hero />
     <TeamSection />

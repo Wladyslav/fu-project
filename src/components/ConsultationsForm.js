@@ -132,6 +132,7 @@ const ConsultationsForm = () => {
               name="expert"
               defaultValue={consultation}
               required
+              
             />
             <span className="icon">{<TiArrowSortedDown />}</span>
           </div>
