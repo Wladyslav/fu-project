@@ -143,7 +143,7 @@ const ConsultationsForm = () => {
                 defaultValue="Ogólna konsultacja"
                 onClick={handleSelectChange}
               />
-              <label for="general">Ogólna konsultacja</label>
+              <label htmlFor="general">Ogólna konsultacja</label>
             </div>
 
             <div className="option">
@@ -153,7 +153,7 @@ const ConsultationsForm = () => {
                 defaultValue="Prawnik Bartłomiej Potocki"
                 onClick={handleSelectChange}
               />
-              <label for="potocki">Prawnik Bartłomiej Potocki</label>
+              <label htmlFor="potocki">Prawnik Bartłomiej Potocki</label>
             </div>
 
             <div className="option">
@@ -163,7 +163,7 @@ const ConsultationsForm = () => {
                 defaultValue="Prawniczka Anna Trylińska"
                 onClick={handleSelectChange}
               />
-              <label for="trylinska">Prawniczka Anna Trylińska</label>
+              <label htmlFor="trylinska">Prawniczka Anna Trylińska</label>
             </div>
 
             <div className="option">
@@ -173,7 +173,7 @@ const ConsultationsForm = () => {
                 defaultValue="Doradczyni zawodowa Joanna Handziak-Buczko"
                 onClick={handleSelectChange}
               />
-              <label for="buczko">
+              <label htmlFor="buczko">
                 Doradczyni zawodowa <br /> Joanna Handziak-Buczko
               </label>
             </div>
@@ -185,7 +185,7 @@ const ConsultationsForm = () => {
                 defaultValue="Psyholożka Wiktoria Raczyńska"
                 onClick={handleSelectChange}
               />
-              <label for="raczynska">Psyholożka Wiktoria Raczyńska</label>
+              <label htmlFor="raczynska">Psyholożka Wiktoria Raczyńska</label>
             </div>
           </OptionsContainer>
         </SelectBox>

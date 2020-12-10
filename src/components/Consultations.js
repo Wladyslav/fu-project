@@ -1,19 +1,6 @@
 import React from "react"
 import styled from "styled-components"
-const tile_items = [
-  {
-    id: 1,
-    title: "stacjonarnie",
-  },
-  {
-    id: 2,
-    title: "pzez maila",
-  },
-  {
-    id: 3,
-    title: "przez telefon",
-  },
-]
+
 
 const Consultations = () => {
   return (
