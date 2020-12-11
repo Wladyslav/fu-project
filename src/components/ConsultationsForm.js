@@ -186,7 +186,7 @@ const ConsultationsForm = () => {
                 defaultValue="Psycholożka Wiktoria Raczyńska"
                 onClick={handleSelectChange}
               />
-              <label htmlFor="raczynska">Psyholożka Wiktoria Raczyńska</label>
+              <label htmlFor="raczynska">Psycholożka Wiktoria Raczyńska</label>
             </div>
           </OptionsContainer>
         </SelectBox>
