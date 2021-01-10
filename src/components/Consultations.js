@@ -1,7 +1,6 @@
 import React from "react"
 import styled from "styled-components"
 
-
 const Consultations = () => {
   return (
     <ConsultationsWrapper>
@@ -31,8 +30,10 @@ const Consultations = () => {
           <TileTitle className="title">przez telefon</TileTitle>
           <TileDescription className="description">
             Prosimy zadzwonić
-            <br /> na numer <a href="tel:571-330-203">571-330-203</a> <br /> w
-            godzinach pracy <br />Instytutu Praw Migrantów
+            <br /> na numer <a href="tel:510-011-846">
+              510-011-846
+            </a> <br /> w godzinach pracy <br />
+            Instytutu Praw Migrantów
           </TileDescription>
         </Tile>
       </TilesWrapper>
@@ -87,7 +88,7 @@ const Tile = styled.div`
   }
   @media (min-width: 860px) {
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     position: relative;
     max-width: initial;
     padding: 63px 48px 61px 61px;
@@ -114,7 +115,6 @@ const TileTitle = styled.h4`
   color: var(--clr-primary-2);
   text-transform: uppercase;
   @media (min-width: 860px) {
-    
     font-weight: normal;
     font-size: 25px;
     width: 100%;
@@ -128,15 +128,14 @@ const TileDescription = styled.div`
   font-weight: 400;
   font-style: normal;
   font-size: 12px;
-  br{
-    display:none;
+  br {
+    display: none;
   }
   @media (min-width: 860px) {
-  font-size: 20px;
-  br{
-    display:block;
-  }
-    
+    font-size: 20px;
+    br {
+      display: block;
+    }
   }
 `
 const TileRemark = styled.div`
@@ -148,7 +147,6 @@ const TileRemark = styled.div`
   margin: 6px 0;
   @media (min-width: 860px) {
     font-size: 13px;
-    
   }
 `
 const TileAdress = styled.div`
@@ -159,8 +157,8 @@ const TileAdress = styled.div`
   font-size: 12px;
   @media (min-width: 860px) {
     position: absolute;
-    bottom:0;
-    padding-bottom:71px;
+    bottom: 0;
+    padding-bottom: 71px;
     font-size: 20px;
   }
 `
