@@ -63,7 +63,7 @@ const Hero = () => {
               <span>
                 <IoIosCall />
               </span>
-              <a href="tel:571-330-203">571-330-203</a>
+              <a href="tel:+48 510 011 846">+48 510 011 846</a>
             </div>
             <div>
               <span>
@@ -87,7 +87,6 @@ const HeroWrapper = styled.section`
   background-image: linear-gradient(to top, #e6e9f0 0%, #fff 100%);
   margin-bottom: 25px;
   div > a > svg {
-    
     margin-left: 10px;
 
     @media (min-width: 860px) {
