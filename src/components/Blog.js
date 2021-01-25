@@ -4,7 +4,6 @@ import Image from "gatsby-image"
 import styled from "styled-components"
 
 const Blog = ({ date, id, slug, title, media }) => {
-  
   return (
     <ArticleWrapperLink key={id} to={`/blogs/${slug}`}>
       <article>
@@ -21,8 +20,8 @@ const ArticleWrapperLink = styled(Link)`
   box-shadow: 0px 0px 57px #e5edf4;
   border-radius: 25px;
   text-decoration: none;
-  
-    height: 164px;
+
+  height: 164px;
   color: inherit;
   @media (min-width: 500px) {
     height: 300px;
@@ -30,7 +29,8 @@ const ArticleWrapperLink = styled(Link)`
   @media (min-width: 1100px) {
     position: relative;
     border-radius: 40px;
-    width: 300px;
+    /* width: 300px; */
+    grid-column: span 4;
     height: 446px;
   }
   article {
@@ -39,7 +39,7 @@ const ArticleWrapperLink = styled(Link)`
     }
     .gatsby-image-wrapper {
       height: 40%;
-      @media(min-width:1100px){
+      @media (min-width: 1100px) {
         height: 50%;
       }
     }
