@@ -4,7 +4,6 @@ import { useStaticQuery, graphql } from "gatsby"
 import Image from "gatsby-image"
 import { FiChevronRight, FiChevronLeft } from "react-icons/fi"
 
-
 export const query = graphql`
   {
     allContentfulTeam {
@@ -58,10 +57,9 @@ const TeamSection = () => {
 
           return (
             <article key={memberIndex} className={pos}>
-              <Image fluid={image.fluid} className="img"/>
+              <Image fluid={image.fluid} className="img" />
               <h4 className="name">{name}</h4>
               <p className="position">{position}</p>
-             
             </article>
           )
         })}
@@ -81,7 +79,7 @@ const TeamSection = () => {
         >
           <FiChevronRight />
         </button>
-        </TeamSlider>
+      </TeamSlider>
     </TeamWrapper>
   )
 }
@@ -138,6 +136,11 @@ const TeamSlider = styled.div`
     .img {
       height: 250px;
       width: 250px;
+      picture {
+        img {
+          height: inherit !important;
+        }
+      }
     }
   }
   article.activeSlide {
