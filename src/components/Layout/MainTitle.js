@@ -3,14 +3,13 @@ import { useStaticQuery, graphql } from "gatsby"
 import styled from "styled-components"
 import Image from "gatsby-image"
 
-
 const MainTitle = ({ title, mainPage }) => {
   const data = useStaticQuery(graphql`
     {
       file(name: { eq: "Logo IPM colour" }) {
         childImageSharp {
           fluid {
-            ...GatsbyImageSharpFluid_tracedSVG
+            ...GatsbyContentfulFluid
           }
         }
       }
