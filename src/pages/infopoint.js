@@ -1,15 +1,15 @@
 import React from "react"
-import Layout from "../components/layout"
-import MainTitle from "../components/MainTitle"
-import Consultations from "../components/Consultations"
-import ConsultationsForm from "../components/ConsultationsForm"
+import Layout from "../components/Layout/layout"
+import MainTitle from "../components/Layout/MainTitle"
+import Consultations from "../components/Consultation/Consultations"
+import ConsultationsForm from "../components/Consultation/ConsultationsForm"
 import SEO from "../components/seo"
 
 const Infopoint = () => {
   return (
     <Layout>
-      <SEO title="Infopunkt"/>
-      
+      <SEO title="Infopunkt" />
+
       <MainTitle title="punkt informacyjny dla cudzoziemców" />
       <Consultations />
       <ConsultationsForm />

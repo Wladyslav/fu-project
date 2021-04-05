@@ -1,11 +1,11 @@
 import React, { useContext } from "react"
 import styled from "styled-components"
-import NavbarLinks from "../constants/links"
+import NavbarLinks from "../../constants/links"
 import { RiMenu3Fill } from "react-icons/ri"
 import { useStaticQuery, graphql } from "gatsby"
 import { Link } from "gatsby"
 import Image from "gatsby-image"
-import { GatsbyContext } from "../context/context"
+import { GatsbyContext } from "../../context/context"
 export const query = graphql`
   {
     file(name: { eq: "Logo IPM colour" }) {
@@ -77,9 +77,8 @@ const Logo = styled(Link)`
   height: 100%;
 
   @media (min-width: 860px) {
-     margin-top: 4px;
-      display: none;
-  
+    margin-top: 4px;
+    display: none;
   }
 `
 const NavButton = styled.button`

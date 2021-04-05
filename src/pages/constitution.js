@@ -1,32 +1,31 @@
 import React from "react"
 import Layout from "../components/Layout/layout"
 import MainTitle from "../components/Layout/MainTitle"
-import Blogs from "../components/Blog/Blogs"
+import ConstitutionArticles from "../components/Constitution/ConstitutionArticles"
 import SEO from "../components/seo"
 
-const Blog = ({
+const Constitution = ({
   data: {
-    allContentfulArticle: { nodes: articles },
+    allContentfulConstitution: { nodes: constitutionArticles },
   },
 }) => {
   return (
     <Layout>
-      <SEO title="Blog" />
-      <MainTitle title="blog" />
-      <Blogs articles={articles} />
+      <SEO title="Konstytucja" />
+      <MainTitle title="domowy kurs konstytucji" />
+      <ConstitutionArticles articles={constitutionArticles} />
     </Layout>
   )
 }
 
 export const query = graphql`
   {
-    allContentfulArticle(sort: { fields: date, order: DESC }) {
+    allContentfulConstitution(sort: { fields: date, order: DESC }) {
       nodes {
         date(formatString: "D/M/Y")
         id
         slug
         title
-
         media {
           fluid {
             ...GatsbyContentfulFluid
@@ -37,4 +36,4 @@ export const query = graphql`
   }
 `
 
-export default Blog
+export default Constitution

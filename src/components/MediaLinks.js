@@ -13,24 +13,28 @@ const MediaLinks = ({ linksColor, flexDirection }) => {
     <FooterMedia linksColor={linksColor} flexDirection={flexDirection}>
       <a
         target="_blank"
+        rel="noreferrer"
         href="https://www.instagram.com/ipm_wroclaw/?fbclid=IwAR063ZxpEi2qvXqW8xMpokMKtTpdvcABw6hpOMJcHSKPxG3t5Wyeyg74P10"
       >
         <AiFillInstagram />
       </a>
       <a
         target="_blank"
+        rel="noreferrer"
         href="https://www.facebook.com/Instytutpm"
       >
         <AiFillFacebook />
       </a>
       <a
         target="_blank"
+        rel="noreferrer"
         href="https://twitter.com/Instytutipm?fbclid=IwAR3f4D-Hs4djOhu1cklTqixQENiR2Hz4ppmrQ5H3wXsu0AzQvfrWBMiucrw"
       >
         <AiFillTwitterSquare />
       </a>
       <a
         target="_blank"
+        rel="noreferrer"
         href="https://www.youtube.com/channel/UCS9Afcq5gYybQwMTOvfeGXg"
       >
         <AiFillYoutube />
@@ -52,7 +56,6 @@ const FooterMedia = styled.div`
     flex-direction: row;
   }
   svg {
-    
     color: ${props => props.linksColor};
     cursor: pointer;
     &:hover {

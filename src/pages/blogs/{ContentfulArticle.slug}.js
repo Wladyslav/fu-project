@@ -4,10 +4,10 @@ import { BLOCKS, INLINES } from "@contentful/rich-text-types"
 import { graphql } from "gatsby"
 import styled from "styled-components"
 
-import Layout from "../components/layout"
-import MainTitle from "../components/MainTitle"
+import Layout from "../../components/Layout/layout"
+import MainTitle from "../../components/Layout/MainTitle"
 
-const ComponentName = ({
+const BlogTemplate = ({
   data: {
     article: {
       author,
@@ -170,6 +170,7 @@ const RichTextWrapper = styled.div`
         left: 0;
         width: 216px;
         border: 1px solid #0c539c;
+        background-color: #0c539c;
       }
       &::after {
         content: "";
@@ -178,6 +179,7 @@ const RichTextWrapper = styled.div`
         left: 0;
         width: 216px;
         border: 1px solid #0c539c;
+        background-color: #0c539c;
       }
     }
   }
@@ -217,7 +219,7 @@ const RichTextWrapper = styled.div`
   }
   hr {
     border: 1px solid #0c539c;
-
+    background-color: #0c539c;
     @media (min-width: 860px) {
       width: 216px;
       margin: 62px 0;
@@ -245,4 +247,4 @@ export const query = graphql`
   }
 `
 
-export default ComponentName
+export default BlogTemplate

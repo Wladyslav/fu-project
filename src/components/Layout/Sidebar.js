@@ -1,8 +1,8 @@
 import React, { useContext } from "react"
-import Links from "../constants/links"
+import Links from "../../constants/links"
 import styled from "styled-components"
 import { FaTimes } from "react-icons/fa"
-import { GatsbyContext } from "../context/context"
+import { GatsbyContext } from "../../context/context"
 
 const Sidebar = () => {
   const { hideSidebar, isOpen } = useContext(GatsbyContext)

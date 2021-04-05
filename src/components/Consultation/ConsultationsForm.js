@@ -2,13 +2,10 @@ import React, { useState } from "react"
 import styled from "styled-components"
 import emailjs from "emailjs-com"
 import { TiArrowSortedDown } from "react-icons/ti"
-import Loader from "./Loader"
+import Loader from "../Loader"
 import ConsultationPopup from "./ConsultationPopup"
 
-
-
 const ConsultationsForm = () => {
-  
   const [name, setName] = useState("")
   const [surname, setSurname] = useState("")
   const [email, setEmail] = useState("")
@@ -57,7 +54,7 @@ const ConsultationsForm = () => {
   const handleOpen = () => {
     setIsSelectOpen(!isSelectOpen)
   }
-  
+
   const sendEmail = e => {
     e.preventDefault()
     setLoader(true)
@@ -132,7 +129,6 @@ const ConsultationsForm = () => {
               name="expert"
               defaultValue={consultation}
               required
-              
             />
             <span className="icon">{<TiArrowSortedDown />}</span>
           </div>

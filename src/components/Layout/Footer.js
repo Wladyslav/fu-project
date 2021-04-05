@@ -2,7 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import { useStaticQuery, graphql } from "gatsby"
 import Image from "gatsby-image"
-import MediaLinks from "./MediaLinks"
+import MediaLinks from "../MediaLinks"
 
 const Footer = () => {
   const data = useStaticQuery(graphql`
@@ -44,7 +44,7 @@ const FooterWrapper = styled.footer`
 const FooterLogo = styled(Image)`
   flex-grow: 0;
   margin-bottom: 10px 0;
-  width:70px;
+  width: 70px;
   img {
     object-fit: fill !important;
   }

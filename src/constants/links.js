@@ -16,11 +16,11 @@ const data = [
     text: "Blog",
     url: "/blog/",
   },
-  // {
-  //   id: 4,
-  //   text: "Szkolenia",
-  //   url: "/training/",
-  // },
+  {
+    id: 4,
+    text: "Konstytucja",
+    url: "/constitution/",
+  },
 ]
 
 const TempLinks = () => {
