@@ -31,8 +31,6 @@ const ConstitutionTemplate = ({
       },
 
       [BLOCKS.EMBEDDED_ASSET]: (node, children) => {
-        console.log("plik", node)
-
         return (
           <img
             src={`https:${node.data.target.fields.file["en-US"].url}`}
