@@ -19,7 +19,6 @@ const BlogTemplate = ({
     },
   },
 }) => {
-  console.log(mainText)
   const options = {
     renderNode: {
       [INLINES.HYPERLINK]: (node, children) => {
