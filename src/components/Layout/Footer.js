@@ -10,7 +10,7 @@ const Footer = () => {
       file(name: { eq: "Logo IPM white" }) {
         childImageSharp {
           fluid {
-            ...GatsbyContentfulFluid
+            ...GatsbyImageSharpFluid
           }
         }
       }

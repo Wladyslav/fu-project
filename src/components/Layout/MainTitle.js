@@ -9,7 +9,7 @@ const MainTitle = ({ title, mainPage }) => {
       file(name: { eq: "Logo IPM colour" }) {
         childImageSharp {
           fluid {
-            ...GatsbyContentfulFluid
+            ...GatsbyImageSharpFluid
           }
         }
       }
