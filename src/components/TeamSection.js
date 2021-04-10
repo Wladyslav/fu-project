@@ -13,7 +13,7 @@ export const query = graphql`
         position
         image {
           fluid {
-            ...GatsbyContentfulFluid_tracedSVG
+            ...GatsbyContentfulFluid
           }
         }
       }

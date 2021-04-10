@@ -54,7 +54,6 @@ const ConstitutionTemplate = ({
           <span>{author}</span>
           <span>{date}</span>
         </div>
-
         <p className="articleSubtitle">{description}</p>
         <RichTextWrapper>
           {documentToReactComponents(mainText.json, options)}
