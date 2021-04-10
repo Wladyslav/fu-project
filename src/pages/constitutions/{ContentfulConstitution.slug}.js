@@ -6,6 +6,8 @@ import styled from "styled-components"
 import Image from "gatsby-image"
 import Layout from "../../components/Layout/layout"
 import MainTitle from "../../components/Layout/MainTitle"
+import NewestArticles from "../../components/NewestArticles"
+import ShareArticle from "../../components/ShareArticle"
 
 const ConstitutionTemplate = ({
   data: {
@@ -15,6 +17,7 @@ const ConstitutionTemplate = ({
       authorSectionTitile,
       photoOfAuthor: { fluid },
       title,
+      slug,
       date,
       mainText,
       childContentfulConstitutionDescriptionTextNode: { description },
@@ -58,14 +61,16 @@ const ConstitutionTemplate = ({
           <hr />
           <h3>{authorSectionTitile}</h3>
           <div className="authorBioContainer">
-            <Image fluid={fluid} />
+            <Image fluid={fluid} imgStyle={{ objectFit: "contain" }} />
             <div className="authorBio">
               <p>{author}</p>
               <p>{authorBio}</p>
             </div>
           </div>
         </AuthorBio>
+        <ShareArticle title={title} slug={slug} articleType="constitutions" />
       </BlogWrapper>
+      <NewestArticles />
     </Layout>
   )
 }
@@ -251,7 +256,11 @@ const AuthorBio = styled.section`
     }
     .gatsby-image-wrapper {
       max-height: 412px;
-      margin-right: 39px;
+
+      margin: 26px auto;
+      @media (min-width: 860px) {
+        margin: 0 39px;
+      }
     }
     .authorBio {
       p:first-child {
@@ -267,12 +276,13 @@ export const query = graphql`
       title
       author
       authorSectionTitile
+      slug
       authorBio {
         authorBio
       }
       photoOfAuthor {
         fluid {
-          ...GatsbyContentfulFluid
+          ...GatsbyContentfulFluid_tracedSVG
         }
       }
       date(formatString: "D/M/Y")

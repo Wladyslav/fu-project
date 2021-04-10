@@ -3,9 +3,11 @@ import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 import { BLOCKS, INLINES } from "@contentful/rich-text-types"
 import { graphql } from "gatsby"
 import styled from "styled-components"
-
 import Layout from "../../components/Layout/layout"
+import SEO from "../../components/seo"
 import MainTitle from "../../components/Layout/MainTitle"
+import NewestArticles from "../../components/NewestArticles"
+import ShareArticle from "../../components/ShareArticle"
 
 const BlogTemplate = ({
   data: {
@@ -13,7 +15,7 @@ const BlogTemplate = ({
       author,
       title,
       date,
-      media: { fluid },
+      slug,
       mainText,
       childContentfulArticleDescriptionTextNode: { description },
     },
@@ -41,6 +43,7 @@ const BlogTemplate = ({
 
   return (
     <Layout>
+      <SEO title={title} />
       <MainTitle title={title} />
       <BlogWrapper>
         <div className="articleAuthor">
@@ -52,7 +55,10 @@ const BlogTemplate = ({
         <RichTextWrapper>
           {documentToReactComponents(mainText.json, options)}
         </RichTextWrapper>
+        <ShareArticle title={title} slug={slug} articleType="blogs" />
       </BlogWrapper>
+
+      <NewestArticles />
     </Layout>
   )
 }
@@ -223,20 +229,18 @@ const RichTextWrapper = styled.div`
     }
   }
 `
+
 export const query = graphql`
-  query MyQuery($slug: String) {
+  query($slug: String) {
     article: contentfulArticle(slug: { eq: $slug }) {
       title
       author
+      slug
       date(formatString: "D/M/Y")
       childContentfulArticleDescriptionTextNode {
         description
       }
-      media {
-        fluid {
-          ...GatsbyContentfulFluid
-        }
-      }
+
       mainText {
         json
       }

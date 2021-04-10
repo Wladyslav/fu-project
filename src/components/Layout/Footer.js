@@ -22,7 +22,7 @@ const Footer = () => {
         <FooterLogo fluid={data.file.childImageSharp.fluid} />
         <MediaLinks linksColor="white" flexDirection="row" />
         <div>
-          <p>50-079, Wrocław</p>
+          <p>50-079, Wrocław </p>
           <p>ul. Ruska 46a/201</p>
           <p>biuro@instytutpm.eu</p>
         </div>

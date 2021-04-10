@@ -1,7 +1,7 @@
 import React from "react"
 import Layout from "../components/Layout/layout"
 import MainTitle from "../components/Layout/MainTitle"
-import ConstitutionArticles from "../components/Constitution/ConstitutionArticles"
+import Articles from "../components/ArticlesList/Articles"
 import SEO from "../components/seo"
 
 const Constitution = ({
@@ -13,7 +13,7 @@ const Constitution = ({
     <Layout>
       <SEO title="Konstytucja" />
       <MainTitle title="domowy kurs konstytucji" />
-      <ConstitutionArticles articles={constitutionArticles} />
+      <Articles articles={constitutionArticles} blogName={"constitutions"} />
     </Layout>
   )
 }
@@ -27,8 +27,8 @@ export const query = graphql`
         slug
         title
         media {
-          fluid {
-            ...GatsbyContentfulFluid
+          fluid(maxWidth: 500) {
+            ...GatsbyContentfulFluid_tracedSVG
           }
         }
       }

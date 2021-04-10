@@ -1,7 +1,7 @@
 import React from "react"
 import Layout from "../components/Layout/layout"
 import MainTitle from "../components/Layout/MainTitle"
-import Blogs from "../components/Blog/Blogs"
+import Articles from "../components/ArticlesList/Articles"
 import SEO from "../components/seo"
 
 const Blog = ({
@@ -13,7 +13,7 @@ const Blog = ({
     <Layout>
       <SEO title="Blog" />
       <MainTitle title="blog" />
-      <Blogs articles={articles} />
+      <Articles articles={articles} blogName={"blogs"} />
     </Layout>
   )
 }
@@ -26,10 +26,9 @@ export const query = graphql`
         id
         slug
         title
-
         media {
-          fluid {
-            ...GatsbyContentfulFluid
+          fluid(maxWidth: 500) {
+            ...GatsbyContentfulFluid_tracedSVG
           }
         }
       }
