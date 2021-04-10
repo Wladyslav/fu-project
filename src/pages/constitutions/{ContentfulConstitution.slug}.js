@@ -4,6 +4,7 @@ import { BLOCKS, INLINES } from "@contentful/rich-text-types"
 import { graphql } from "gatsby"
 import styled from "styled-components"
 import Image from "gatsby-image"
+import SEO from "../../components/seo"
 import Layout from "../../components/Layout/layout"
 import MainTitle from "../../components/Layout/MainTitle"
 import NewestArticles from "../../components/NewestArticles"
@@ -46,6 +47,7 @@ const ConstitutionTemplate = ({
 
   return (
     <Layout>
+      <SEO title={title} />
       <MainTitle title={title} />
       <BlogWrapper>
         <div className="articleAuthor">
