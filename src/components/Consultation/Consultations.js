@@ -11,9 +11,7 @@ const Consultations = () => {
           <TileDescription className="description">
             Konsultacje prowadzone są przez konsultantów w godzinach pracy
           </TileDescription>
-          <TileRemark className="remark">
-            (na czas kwarantanny ​obowiązują zapisy)
-          </TileRemark>
+          <TileRemark className="remark">(​obowiązują zapisy)</TileRemark>
           <TileAdress className="adress">ul. Ruska 46a/201</TileAdress>
         </Tile>
         <Tile>
@@ -33,7 +31,8 @@ const Consultations = () => {
             <br /> na numer <a href="tel:510-011-846">
               510-011-846
             </a> <br /> w godzinach pracy <br />
-            Instytutu Praw Migrantów
+            Instytutu Praw Migrantów: poniedziałek, środa, piątek - 14:00-20:00;
+            wtorek, czwartek - 10:00-14:00
           </TileDescription>
         </Tile>
       </TilesWrapper>

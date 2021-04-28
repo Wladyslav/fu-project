@@ -118,6 +118,7 @@ const ConsultationsForm = () => {
           placeholder="Telefon"
           value={phoneNumber}
           onChange={handleChange}
+          required
         />
 
         <SelectBox isSelectOpen={isSelectOpen}>

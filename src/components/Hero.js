@@ -70,7 +70,7 @@ const Hero = () => {
                 <MdLocationOn />
               </span>
               <p>
-                ul.Ruska 46a/201
+                ul.Ruska 46a/202
                 <br /> 50-079, Wrocław
               </p>
             </div>
