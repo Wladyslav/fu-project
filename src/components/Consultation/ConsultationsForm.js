@@ -213,7 +213,7 @@ const FormWrapper = styled.section`
   background: var(--clr-primary-2);
   border-radius: 25px;
   @media (min-width: 860px) {
-    margin: 62px auto 101px auto;
+    margin: 0px auto 101px auto;
   }
 `
 const FormTitle = styled.h3`

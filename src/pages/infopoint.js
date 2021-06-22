@@ -12,6 +12,7 @@ const Infopoint = () => {
 
       <MainTitle title="punkt informacyjny dla cudzoziemców" />
       <Consultations />
+
       <ConsultationsForm />
     </Layout>
   )

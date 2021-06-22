@@ -1,10 +1,20 @@
 import React from "react"
 import styled from "styled-components"
 
+import PageIntroduction from "../PageIntroduction"
+
 const Consultations = () => {
   return (
     <ConsultationsWrapper>
       <ConsultationsTitle>Konsultacje ogólne</ConsultationsTitle>
+      <PageIntroduction>
+        Bezpłatne wsparcie informacyjne dla migrantów z Dolnego Śląska w
+        zakresie między innymi: legalizacji pobytu i pracy, ochrony zdrowia i
+        ubezpieczenia, codziennego funkcjonowania w Polsce. Konsultacje
+        prowadzone są w czterech językach – ukraińskim, polskim, rosyjskim oraz
+        angielskim. Do skorzystania ze wsparcia niezbędne jest przedstawienie
+        paszportu i karty pobytu (jeśli została wydana).
+      </PageIntroduction>
       <TilesWrapper>
         <Tile>
           <TileTitle className="title">stacjonarnie</TileTitle>
@@ -36,6 +46,14 @@ const Consultations = () => {
           </TileDescription>
         </Tile>
       </TilesWrapper>
+      <PageIntroduction>
+        Dodatkowo prowadzimy konsultacje ekspertów w zakresie prawa pracy,
+        administracyjnego, rodzinnego (prawnik), poszukiwania pracy,
+        przygotowania CV (doradca zawodowy), adaptacji w Polsce, przezwyciężania
+        trudności (psycholog). Konieczne zapisy. Do skorzystania ze wsparcia
+        niezbędne jest przedstawienie paszportu i karty pobytu (jeśli została
+        wydana).
+      </PageIntroduction>
     </ConsultationsWrapper>
   )
 }

@@ -51,7 +51,7 @@ const Hero = () => {
         </HeroHours>
         <HeroContact>
           <h4>kontakt</h4>
-          <div>w pytaniach współpracy:</div>
+          <div>pytania dotyczące współpracy:</div>
           <div className="contact-container">
             <div>
               <span>

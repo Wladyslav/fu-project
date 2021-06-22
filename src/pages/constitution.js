@@ -2,6 +2,7 @@ import React from "react"
 import Layout from "../components/Layout/layout"
 import MainTitle from "../components/Layout/MainTitle"
 import Articles from "../components/ArticlesList/Articles"
+import PageIntroduction from "../components/PageIntroduction"
 import SEO from "../components/seo"
 
 const Constitution = ({
@@ -13,6 +14,11 @@ const Constitution = ({
     <Layout>
       <SEO title="Konstytucja" />
       <MainTitle title="domowy kurs konstytucji" />
+      <PageIntroduction>
+        Wybrane, szczególnie przydatne obcokrajowcom artykuły z Konstytucji RP –
+        aktu prawnego określającego prawa i swobody obywateli. Artykuły dostępne
+        w języku ukraińskim, z komentarzami radców prawnych.
+      </PageIntroduction>
       <Articles articles={constitutionArticles} blogName={"constitutions"} />
     </Layout>
   )
