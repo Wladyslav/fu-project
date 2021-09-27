@@ -27,6 +27,16 @@ body{
   font-family: 'Ubuntu'
 }
 
+.sectionTitle{margin-top: 70px;
+  text-transform: uppercase;
+  color: var(--clr-primary-2);
+  font-weight: bold;
+  font-size: 38px;
+  text-align: center;
+  @media (min-width: 860px) {
+    font-size: 55px;
+    text-align: left;
+  }}
 
 `
 export const wrapRootElement = ({ element }) => {

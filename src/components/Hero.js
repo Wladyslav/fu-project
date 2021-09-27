@@ -18,6 +18,7 @@ const Hero = () => {
       }
     }
   `)
+  
   return (
     <HeroWrapper>
       <HeroContainer>

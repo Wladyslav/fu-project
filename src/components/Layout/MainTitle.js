@@ -20,6 +20,7 @@ const MainTitle = ({ title, mainPage }) => {
     <MainTitleWrapper>
       <Logo fluid={data.file.childImageSharp.fluid} mainPage={mainPage} />
       <Title>{title}</Title>
+      
     </MainTitleWrapper>
   )
 }

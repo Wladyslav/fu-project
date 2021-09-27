@@ -21,6 +21,11 @@ const data = [
     text: "Konstytucja",
     url: "/constitution/",
   },
+  {
+    id: 4,
+    text: "O nas",
+    url: "/about-us/",
+  },
 ]
 
 const TempLinks = () => {
