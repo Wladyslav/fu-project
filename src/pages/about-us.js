@@ -8,7 +8,6 @@ import Goals from "../components/Goals"
 import Activities from "../components/Activities"
 import Gallery from "../components/Gallery"
 import Accomplishments from "../components/Accomplishments"
-import Documentation from "../components/Documentation"
 import SEO from "../components/seo"
 
 
@@ -31,7 +30,7 @@ const AboutUs = () => {
       <Gallery/>   
       <Partners/>
       <Accomplishments/>
-      <Documentation/>
+      
 
     </Layout>
   )

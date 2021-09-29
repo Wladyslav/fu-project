@@ -83,15 +83,18 @@ const Wrapper = styled.aside`
     animation: slideRight 0.5s ease-in-out 0.3s forwards;
   }
   .side-container li:nth-of-type(1) {
-    animation-delay: 0.25s;
+    animation-delay: 0.15s;
   }
   .side-container li:nth-of-type(2) {
-    animation-delay: 0.5s;
+    animation-delay: 0.25s;
   }
   .side-container li:nth-of-type(3) {
-    animation-delay: 0.75s;
+    animation-delay: 0.5s;
   }
   .side-container li:nth-of-type(4) {
+    animation-delay: 0.75s;
+  }
+  .side-container li:nth-of-type(5) {
     animation-delay: 1s;
   }
 
