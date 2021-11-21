@@ -26,7 +26,7 @@ const NewestArticles = () => {
 
   return (
     <>
-      <NewArticlesTitle className="newestTitle">Najnowsze</NewArticlesTitle>
+      <NewArticlesTitle className="sectionTitle">Najnowsze artykuły</NewArticlesTitle>
       <Articles articles={articles} blogName={"blogs"} />
     </>
   )

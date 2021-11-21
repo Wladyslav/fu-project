@@ -52,14 +52,31 @@ const Hero = () => {
         </HeroHours>
         <HeroContact>
           <h4>kontakt</h4>
-          <div>pytania dotyczące współpracy:</div>
           <div className="contact-container">
+          <div className="email-title">zapisy na konsultacje:</div>
+            <div>
+              <span>
+                <IoMdMail />
+              </span>
+              <a href="mailto:zapisy@instytutpm.eu">zapisy@instytutpm.eu</a>
+            </div>
+
+            <div className="email-title">dla mediów/współpraca reklamowa:</div>
+            <div>
+              <span>
+                <IoMdMail />
+              </span>
+              <a href="mailto:press@instytutpm.eu">press@instytutpm.eu</a>
+            </div>
+
+            <div className="email-title">współpraca:</div>
             <div>
               <span>
                 <IoMdMail />
               </span>
               <a href="mailto:biuro@instytutpm.eu">biuro@instytutpm.eu</a>
             </div>
+            
             <div>
               <span>
                 <IoIosCall />
@@ -201,8 +218,8 @@ const HeroHours = styled.div`
 const HeroContact = styled.div`
   position: absolute;
   z-index: 3;
-  width: 164px;
-  height: 175px;
+  width: 180px;
+  height: 265px;
   right: 100px;
   top: 205px;
   border-radius: 40px;
@@ -213,7 +230,7 @@ const HeroContact = styled.div`
 
   @media (min-width: 860px) {
     padding: 38px 32px;
-    height: 287px;
+    height: 360px;
     width: 281px;
     top: 450px;
     right: 187px;
@@ -266,6 +283,9 @@ const HeroContact = styled.div`
     svg {
       font-size: 18px;
     }
+  }
+  .email-title{
+    font-weight:600;
   }
 `
 export default Hero

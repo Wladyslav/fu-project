@@ -72,7 +72,7 @@ const ArticleWrapperLink = styled(Link)`
       color: var(--clr-primary-1);
       @media (min-width: 1100px) {
         font-size: 18px;
-        margin: 75px auto 9px 31px;
+        margin: 35px auto 9px 31px;
       }
     }
   }

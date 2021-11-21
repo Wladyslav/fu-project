@@ -32,7 +32,7 @@ const Partners = () => {
     )
 }
 const PartnersWrapper = styled.section`
-
+position:relative;
 
 `
 const PartnersTitle = styled.h3`

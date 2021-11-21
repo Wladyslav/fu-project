@@ -3,11 +3,10 @@ import styled from "styled-components"
 import Layout from "../components/Layout/layout"
 import MainTitle from "../components/Layout/MainTitle"
 import TeamSection from "../components/TeamSection"
-import Partners from "../components/Partners"
 import Goals from "../components/Goals"
 import Activities from "../components/Activities"
 import Gallery from "../components/Gallery"
-import Accomplishments from "../components/Accomplishments"
+
 import SEO from "../components/seo"
 
 
@@ -28,8 +27,7 @@ const AboutUs = () => {
       <Goals/>   
       <Activities/>   
       <Gallery/>   
-      <Partners/>
-      <Accomplishments/>
+      
       
 
     </Layout>
