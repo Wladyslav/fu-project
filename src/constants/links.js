@@ -23,6 +23,12 @@ const data = [
   },
   {
     id: 4,
+    text: "Biblioteczka",
+    url: "/biblioteczka/",
+  },
+  
+  {
+    id: 5,
     text: "O nas",
     url: "/about-us/",
   },

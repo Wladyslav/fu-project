@@ -10,7 +10,7 @@ import SEO from "../components/seo"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Instytut Praw Migrantów - Home" />
+    <SEO title="Instytut Praw Migrantów | Pomagamy migrantom" />
     <MainTitle title="instytut praw migrantów" mainPage />
     <Hero />
     <Issues/>

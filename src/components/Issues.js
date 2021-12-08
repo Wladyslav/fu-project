@@ -32,7 +32,7 @@ grid-template-rows: repeat(4, 320px);
 text-transform:uppercase;
 color: var(--clr-primary-1);
 font-weight:600;
-font-size:26px;
+font-size:21px;
 section{
     p{
         // position:absolute

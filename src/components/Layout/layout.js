@@ -20,7 +20,8 @@ const Layout = ({ children }) => {
 
 const Main = styled.main`
 max-width: var(--max-width);
-  margin: 0 auto;
+margin: 0 auto;
+min-height: 100vh;
 
 `
 export default Layout

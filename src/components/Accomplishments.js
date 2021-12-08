@@ -45,7 +45,7 @@ justify-items:center;
 `
 const Accomplishment = styled.div`
 text-align:center;
-line-hight:30px;
+line-height:30px;
 margin: 24px 16px;
 
 `
