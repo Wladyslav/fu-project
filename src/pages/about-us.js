@@ -6,6 +6,7 @@ import TeamSection from "../components/TeamSection"
 import Goals from "../components/Goals"
 import Activities from "../components/Activities"
 import Gallery from "../components/Gallery"
+import AboutUsLinks from "../components/AboutUsLinks"
 
 import SEO from "../components/seo"
 
@@ -16,6 +17,7 @@ const AboutUs = () => {
   return (
     <Layout>
       <SEO title="O nas" />
+      <AboutUsLinks/>
       <MainTitle title="O nas" />
       <Description>
         <p>W odpowiedzi na coraz większy odsetek migrantów w społeczności lokalnej oraz ich zdiagnozowane potrzeby został powołany do życia <strong> Instytut Praw Migrantów z siedzibą przy ul. Ruskiej 46a/202</strong> we Wrocławiu. Uchwałą z dnia 22 grudnia 2020 r. IPM kontynuuje rozwijać działalność już istniejącego od 2017 r. punktu informacyjnego dla migrantów.</p>

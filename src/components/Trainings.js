@@ -4,7 +4,7 @@ import styled from "styled-components"
 import BackgroundImage from 'gatsby-background-image'
 
 
-const Trainings = () => {
+const Trainings = (props) => {
     const data = useStaticQuery(graphql`
     {
       file(relativePath: {eq: "3.jpg"}) {
@@ -21,7 +21,7 @@ const Trainings = () => {
         <BackgroundImage 
         Tag="section"
         fluid={imageData}
-        backgroundColor={`#040e18`}><p>szkolimy migrantów</p></BackgroundImage>
+        backgroundColor={`#040e18`}><p>{props.children}</p></BackgroundImage>
     )
 }
 

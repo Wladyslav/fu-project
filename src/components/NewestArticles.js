@@ -3,7 +3,7 @@ import styled from "styled-components"
 import { useStaticQuery, graphql } from "gatsby"
 import Articles from "../components/ArticlesList/Articles"
 
-const NewestArticles = () => {
+const NewestArticles = (props) => {
   const {
     newArticles: { nodes: articles },
   } = useStaticQuery(graphql`
@@ -26,7 +26,7 @@ const NewestArticles = () => {
 
   return (
     <>
-      <NewArticlesTitle className="sectionTitle">Najnowsze artykuły</NewArticlesTitle>
+      <NewArticlesTitle className="sectionTitle">{props.children}</NewArticlesTitle>
       <Articles articles={articles} blogName={"blogs"} />
     </>
   )

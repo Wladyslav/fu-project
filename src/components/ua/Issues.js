@@ -1,20 +1,20 @@
 import React from 'react'
 import styled from 'styled-components'
-import Consulting from '../components/Consulting'
-import Translations from '../components/Translations'
-import Trainings from '../components/Trainings'
-import CompanySupport from '../components/CompanySupport'
+import Consulting from '../Consulting'
+import Translations from '../Translations'
+import Trainings from '../Trainings'
+import CompanySupport from '../CompanySupport'
 
 const Issues = () => {
  
     return (
         <IssuesWrapper>
-            <IssuesTitle className="sectionTitle">nasza działalność</IssuesTitle>
+            <IssuesTitle className="sectionTitle">НАША ДІЯЛЬНІСТЬ</IssuesTitle>
             <IssuesList >
-            <Consulting>KONSULTUJEMY</Consulting>
-            <Translations>TŁUMACZYMY</Translations>
-            <Trainings>SZKOLIMY MIGRANTÓW</Trainings>
-            <CompanySupport>DORADZAMY INSTYTUCJOM I FIRMOM</CompanySupport>
+            <Consulting>МИ КОНСУЛЬТУЄМО</Consulting>
+            <Translations>МИ ПЕРЕКЛАДАЄМО</Translations>
+            <Trainings>МИ НАВЧУЄМО МІГРАНТІВ</Trainings>
+            <CompanySupport>МИ КОнсультуємо УСТАНОВИ ТА КОМПАНІЇ</CompanySupport>
             </IssuesList>
             
             

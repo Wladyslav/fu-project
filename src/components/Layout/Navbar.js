@@ -42,7 +42,6 @@ const Navbar = () => {
 
 const NavbarWrapper = styled.nav`
   z-index: 999;
-  position: relative;
   display: flex;
   height: 5rem;
   justify-content: space-between;

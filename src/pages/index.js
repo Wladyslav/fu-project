@@ -6,17 +6,19 @@ import Partners from "../components/Partners"
 import NewestArticles from "../components/NewestArticles"
 import Accomplishments from "../components/Accomplishments"
 import Issues from "../components/Issues"
+import HomeLinks from "../components/HomeLinks"
 import SEO from "../components/seo"
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Instytut Praw Migrantów | Pomagamy migrantom" />
+    <HomeLinks/>
     <MainTitle title="instytut praw migrantów" mainPage />
     <Hero />
     <Issues/>
     <Partners/>
     <Accomplishments/>
-    <NewestArticles />
+    <NewestArticles>Najnowsze artykuły</NewestArticles >
   </Layout>
 )
 
