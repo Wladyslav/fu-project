@@ -30,23 +30,23 @@ const Hero = () => {
           <ul>
             <li>
             MON 
-              <span /> 14:00 - 20:00
+              <span /> 10:00 - 18:00
             </li>
             <li>
             TUE 
-              <span /> 10:00 - 14:00
+              <span /> 10:00 - 17:00
             </li>
             <li>
             WED 
-              <span /> 14:00 - 20:00
+              <span /> 10:00 - 17:00
             </li>
             <li>
             THU  <span />
-              10:00 - 14:00
+            10:00 - 17:00
             </li>
             <li>
             FRI  <span />
-              14:00 - 20:00
+            10:00 - 17:00
             </li>
           </ul>
         </HeroHours>
