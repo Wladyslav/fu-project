@@ -41,8 +41,8 @@ const Consultations = () => {
             <br /> na numer <a href="tel:510-011-846">
               510-011-846
             </a> <br /> w godzinach pracy <br />
-            Instytutu Praw Migrantów: poniedziałek, środa, piątek - 14:00-20:00;
-            wtorek, czwartek - 10:00-14:00
+            Instytutu Praw Migrantów: poniedziałek: 10:00 - 18:00, wtorek, środa, czwartek, piątek: 10:00 - 17:00
+            
           </TileDescription>
         </Tile>
       </TilesWrapper>
